@@ -11,22 +11,22 @@ import java.util.*;
 public class TwoSum {
     /**
      * Solution 1: find the other element by iterating over the array
-     *  time complexity: O(N^2)
-     *  space complexity: O(1)
+     *  time complexity: O(n^2)
+     *  space complexity: O(n)
      */
 
     /**
      *  Solution 2: sort the array, and find the other element by binary search
      *  - sort the array by using pair (value + index)
-     *  -- time complexity: O(NlogN)
-     *  -- space complexity: O(N)
-     *  - iterate over each element and found it's left: O(NlogN)
-     *  -- time complexity: O(NlogN)
+     *  -- time complexity: O(nlog(n))
+     *  -- space complexity: O(n)
+     *  - iterate over each element and found it's left: O(nlog(n))
+     *  -- time complexity: O(nlog(n))
      *  -- space complexity: O(1)
      *
      *  in total:
-     *  - time complexity: O(NlogN)
-     *  - space complexity: O(N)
+     *  - time complexity: O(nlog(n))
+     *  - space complexity: O(n)
      */
 
 
@@ -55,10 +55,10 @@ public class TwoSum {
     /**
      * Solution 3:  Use HashMap to find the other element
      * - Construct a HashMap:
-     * -- time complexity: O(N)
-     * -- space complexity: O(N)
+     * -- time complexity: O(n)
+     * -- space complexity: O(n)
      * - For each element, try to find if the corresponding value is found
-     * -- time complexity: O(N)
+     * -- time complexity: O(n)
      * -- space complexity: O(1)
      */
 //    public int[] twoSum(int[] nums, int target) {
@@ -87,8 +87,8 @@ public class TwoSum {
 
     /**
      * Solution 4: Optimization of Solution 3 by constructing HashMap and find element at the same time
-     * - time complexity: O(N)
-     * - space complexity: O(N)
+     * - time complexity: O(n)
+     * - space complexity: O(n)
      */
 
     public int[] twoSum(int[] nums, int target) {
